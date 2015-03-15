@@ -29,28 +29,28 @@
 // =======================================================================
 
 Vec2d::Vec2d( void )
-	{
-		// Constructeur par défaut
-		
-		x=0;
-		y=0;
-	}
+{
+	// Constructeur par défaut
 	
+	x=0;
+	y=0;
+}
+
 Vec2d::Vec2d(double _x, double _y)
-	{
-		// Constructeur à partir de valeurs données
-		
-		x=_x;
-		y=_y;
-	}
+{
+	// Constructeur à partir de valeurs données
 	
+	x=_x;
+	y=_y;
+}
+
 Vec2d::Vec2d(const Vec2d &modele)
-	{
-		// Constructeur par copie
-		
-		x=modele.x;
-		y=modele.y;
-	}
+{
+	// Constructeur par copie
+	
+	x=modele.x;
+	y=modele.y;
+}
 // =======================================================================
 //                                  Destructeurs
 // =======================================================================
@@ -64,12 +64,12 @@ Vec2d::~Vec2d( void )
 // =======================================================================
 
 double Vec2d::distance_carre(const Vec2d & b )
-	{
-		// Méthode permettant de calculer la distance au carré entre deux vecteurs
-		
-		return (x-b.x)*(x-b.x)+(y-b.y)*(y-b.y);
-	}
+{
+	// Méthode permettant de calculer la distance au carré entre deux vecteurs
 	
+	return (x-b.x)*(x-b.x)+(y-b.y)*(y-b.y);
+}
+
 // =======================================================================
 //                                Methodes Protégées
 // =======================================================================
