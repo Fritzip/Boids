@@ -44,9 +44,9 @@ Gaia::Gaia( void )
 {
 	// Constructeur par défaut
 	
-	charger("../DATA/pop_defaut");
+	charger("DATA/pop_defaut");
  
-	fenetre=new bwindow(largeur_fenetre,hauteur_fenetre,"Des poissons volants !");
+	fenetre=new bwindow(largeur_fenetre, hauteur_fenetre,"Des poissons volants !");
 	
 	joueur=populations[0]->get_agent(0);
 }
@@ -66,7 +66,7 @@ Gaia::Gaia(char save_or_load, string nom_fic)
 	  
 	else // save_or_load=1 : On lance une partie par défaut avec la possibilité d'enregistrer
 	{
-		charger("../DATA/pop_defaut");
+		charger("DATA/pop_defaut");
 		 
 		fenetre=new bwindow(largeur_fenetre,hauteur_fenetre,"Des poissons volants !");
 		
